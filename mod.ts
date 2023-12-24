@@ -1,5 +1,5 @@
-import { persistentAtom } from "npm:@nanostores/persistent";
-import { WritableAtom, action, atom } from "npm:nanostores";
+import { persistentAtom } from "npm:@nanostores/persistent@0.9.1";
+import { WritableAtom, action, atom } from "npm:nanostores@0.9.5";
 
 export type WordleError =
   | "max_attempts_reached"
@@ -69,3 +69,5 @@ export function wordle(
 
   return { word: $word, attempts: $attempts, attempt, maxAttempts };
 }
+
+export default wordle;

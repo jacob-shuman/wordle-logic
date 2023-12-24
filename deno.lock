@@ -3,7 +3,8 @@
   "packages": {
     "specifiers": {
       "npm:@nanostores/persistent": "npm:@nanostores/persistent@0.9.1_nanostores@0.9.5",
-      "npm:nanostores": "npm:nanostores@0.9.5"
+      "npm:nanostores": "npm:nanostores@0.9.5",
+      "npm:nanostores@0.9.5": "npm:nanostores@0.9.5"
     },
     "npm": {
       "@nanostores/persistent@0.9.1_nanostores@0.9.5": {

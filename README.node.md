@@ -22,7 +22,7 @@ This module exports a single `wordle()` function which exports [nanostores](http
 
 ### Errors
 
-The `attempt()` function will return an object with an `error?: WordleError` property if the attempt failed for any reason. Common errors are (for an exhaustive list see [mod.ts](./mod.ts)):
+The `attempt()` function will return an object with an `error?: WordleError` property if the attempt failed for any reason. Common errors are (for an exhaustive list see [./src/mod.ts](./mod.ts)):
 
 - `"max_attempts_reached"`: the game is already over since the number of attempts has reached `options?.maxAttempts` (6 by default)
 - `"too_few_characters"`: the attempted word has less characters then the current word
