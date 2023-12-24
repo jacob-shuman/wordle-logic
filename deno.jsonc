@@ -3,7 +3,8 @@
         "./node"
     ],
     "tasks": {
+        "test": "deno test",
         "dev": "deno task test --watch",
-        "test": "deno test"
+        "node": "deno run --allow-env --allow-read --allow-write --allow-run dnt.ts"
     }
 }
