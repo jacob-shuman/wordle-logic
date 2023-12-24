@@ -1,9 +1,9 @@
-# wordle-logic
+# wordle_logic
 
 <!-- Badges -->
 
-[![deno badge](https://img.shields.io/badge/deno-wordle__logic-black?style=for-the-badge&labelColor=black)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
-[![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
+[![deno badge](https://img.shields.io/badge/deno-wordle__logic-black?style=for-the-badge&labelColor=black)](https://deno.land/x/wordle_logic)
+[![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://www.npmjs.com/package/wordle-logic)
 [![license badge](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&labelColor=blue)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
 
 > A typesafe deno/node package to facilitate a game of wordle using nanostores

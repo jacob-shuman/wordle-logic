@@ -2,8 +2,8 @@
 
 <!-- Badges -->
 
-[![deno badge](https://img.shields.io/badge/deno-wordle__logic-black?style=for-the-badge&labelColor=black)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
-[![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
+[![deno badge](https://img.shields.io/badge/deno-wordle__logic-black?style=for-the-badge&labelColor=black)](https://deno.land/x/wordle_logic)
+[![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://www.npmjs.com/package/wordle-logic)
 [![license badge](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&labelColor=blue)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
 
 > A typesafe deno/node package to facilitate a game of wordle using nanostores
@@ -28,11 +28,3 @@ The `attempt()` function will return an object with an `error?: WordleError` pro
 - `"too_few_characters"`: the attempted word has less characters then the current word
 - `"too_many_characters"`: the attempted word has more characters then the current word
 - `"invalid_attempt"`: the attempt did not pass the `options?.validateAttempt()` function
-
-## Tasks
-
-| Task   | Description                                                       |
-| ------ | ----------------------------------------------------------------- |
-| `test` | run all tests once                                                |
-| `dev`  | run all tests in watch mode                                       |
-| `node` | compile node package using [dnt](https://github.com/denoland/dnt) |
