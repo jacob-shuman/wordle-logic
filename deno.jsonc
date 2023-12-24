@@ -1,0 +1,9 @@
+{
+    "exclude": [
+        "./node"
+    ],
+    "tasks": {
+        "dev": "deno task test --watch",
+        "test": "deno test"
+    }
+}
