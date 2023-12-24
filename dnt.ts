@@ -17,11 +17,6 @@ await build({
     deno: "dev",
   },
   test: false,
-  typeCheck: false,
-  compilerOptions: {
-    target: "ES2020",
-    sourceMap: true,
-  },
   package: {
     name: "wordle-logic",
     version,
