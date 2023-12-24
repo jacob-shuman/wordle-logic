@@ -1,6 +1,6 @@
 import { build, emptyDir } from "https://deno.land/x/dnt@0.39.0/mod.ts";
 
-const outDir = "./node";
+const outDir = "./npm";
 
 const [version] = Deno.args;
 
@@ -26,7 +26,7 @@ await build({
     name: "wordle-logic",
     version,
     description:
-      "A typesafe deno/node package to facilitate a game of wordle using nanostores",
+      "A typesafe deno/npm package to facilitate a game of wordle using nanostores",
     license: "MIT",
     author: {
       name: "Jacob Shuman",
@@ -42,5 +42,5 @@ await build({
   },
 });
 
-await Deno.copyFile("README.node.md", `${outDir}/README.md`);
+await Deno.copyFile("README.npm.md", `${outDir}/README.md`);
 await Deno.copyFile("LICENSE", `${outDir}/LICENSE`);

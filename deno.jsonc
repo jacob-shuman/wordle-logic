@@ -1,10 +1,10 @@
 {
   "exclude": [
-    "./node"
+    "./npm"
   ],
   "tasks": {
     "test": "deno test",
     "dev": "deno task test --watch",
-    "node": "deno run --allow-env --allow-read --allow-write --allow-run dnt.ts"
+    "npm": "deno run --allow-env --allow-read --allow-write --allow-run dnt.ts"
   }
 }

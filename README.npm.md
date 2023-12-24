@@ -6,7 +6,7 @@
 [![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://www.npmjs.com/package/wordle-logic)
 [![license badge](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&labelColor=blue)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
 
-> A typesafe deno/node package to facilitate a game of wordle using nanostores
+> A typesafe deno/npm package to facilitate a game of wordle using nanostores
 
 ## Why?
 

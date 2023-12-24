@@ -6,7 +6,7 @@
 [![npm badge](https://img.shields.io/badge/npm-wordle--logic-red?style=for-the-badge&labelColor=red)](https://www.npmjs.com/package/wordle-logic)
 [![license badge](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&labelColor=blue)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
 
-> A typesafe deno/node package to facilitate a game of wordle using nanostores
+> A typesafe deno/npm package to facilitate a game of wordle using nanostores
 
 ## Why?
 
@@ -42,8 +42,8 @@ exhaustive list see [mod.ts](./mod.ts)):
 
 ## Tasks
 
-| Task   | Description                                                       |
-| ------ | ----------------------------------------------------------------- |
-| `test` | run all tests once                                                |
-| `dev`  | run all tests in watch mode                                       |
-| `node` | compile node package using [dnt](https://github.com/denoland/dnt) |
+| Task   | Description                                                      |
+| ------ | ---------------------------------------------------------------- |
+| `test` | run all tests once                                               |
+| `dev`  | run all tests in watch mode                                      |
+| `npm`  | compile npm package using [dnt](https://github.com/denoland/dnt) |
