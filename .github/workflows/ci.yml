@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  deno:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
