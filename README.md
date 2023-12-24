@@ -2,6 +2,9 @@
 
 <!-- Badges -->
 
+<!-- TODO: deno.land/x badge -->
+<!-- TODO: npm badge -->
+
 [![license badge](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&labelColor=blue)](https://github.com/jacob-shuman/wordle-logic/blob/main/LICENSE)
 
 > A typesafe deno/node package to facilitate a game of wordle using nanostores
