@@ -1,5 +1,5 @@
 import { persistentAtom } from "npm:@nanostores/persistent@0.9.1";
-import { WritableAtom, action, atom } from "npm:nanostores@0.9.5";
+import { action, atom, WritableAtom } from "npm:nanostores@0.9.5";
 
 export type WordleError =
   | "max_attempts_reached"
@@ -13,7 +13,7 @@ export function wordle(
     persistKey?: string;
     maxAttempts?: number;
     validateAttempt?: (word: string) => boolean;
-  }
+  },
 ) {
   if (options?.persistKey) {
     console.log("key is", `"wordle-${options?.persistKey}"`);
@@ -27,9 +27,9 @@ export function wordle(
   const $attempts: WritableAtom<string[]> =
     options?.persistKey && options?.persistKey.length > 0
       ? persistentAtom(`wordle-${options?.persistKey}`, [], {
-          encode: JSON.stringify,
-          decode: JSON.parse,
-        })
+        encode: JSON.stringify,
+        decode: JSON.parse,
+      })
       : atom([]);
 
   const maxAttempts = options?.maxAttempts ?? 6;
@@ -64,7 +64,7 @@ export function wordle(
       store.set([...store.get(), attemptedWord]);
 
       return {};
-    }
+    },
   );
 
   return { word: $word, attempts: $attempts, attempt, maxAttempts };

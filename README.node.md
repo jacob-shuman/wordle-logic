@@ -10,21 +10,32 @@
 
 ## Why?
 
-I plan on building a minimal adless version of [wordle](https://en.wikipedia.org/wiki/Wordle) and wanted to open source the logic.
+I plan on building a minimal adless version of
+[wordle](https://en.wikipedia.org/wiki/Wordle) and wanted to open source the
+logic.
 
 ### Getting started
 
-This module exports a single `wordle()` function which exports [nanostores](https://github.com/nanostores/nanostores) and an `attempt()` function to test words.
+This module exports a single `wordle()` function which exports
+[nanostores](https://github.com/nanostores/nanostores) and an `attempt()`
+function to test words.
 
 - `word`: a nanostore which holds the current game's word
 - `attempts`: a nanostore which holds the current game's guesses
-- `attempt()`: a function which takes in a single string and returns an object with a `error?: WordleError` property.
+- `attempt()`: a function which takes in a single string and returns an object
+  with a `error?: WordleError` property.
 
 ### Errors
 
-The `attempt()` function will return an object with an `error?: WordleError` property if the attempt failed for any reason. Common errors are (for an exhaustive list see [./src/mod.ts](./mod.ts)):
+The `attempt()` function will return an object with an `error?: WordleError`
+property if the attempt failed for any reason. Common errors are (for an
+exhaustive list see [./src/mod.ts](./mod.ts)):
 
-- `"max_attempts_reached"`: the game is already over since the number of attempts has reached `options?.maxAttempts` (6 by default)
-- `"too_few_characters"`: the attempted word has less characters then the current word
-- `"too_many_characters"`: the attempted word has more characters then the current word
-- `"invalid_attempt"`: the attempt did not pass the `options?.validateAttempt()` function
+- `"max_attempts_reached"`: the game is already over since the number of
+  attempts has reached `options?.maxAttempts` (6 by default)
+- `"too_few_characters"`: the attempted word has less characters then the
+  current word
+- `"too_many_characters"`: the attempted word has more characters then the
+  current word
+- `"invalid_attempt"`: the attempt did not pass the `options?.validateAttempt()`
+  function
