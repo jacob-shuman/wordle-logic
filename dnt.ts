@@ -6,8 +6,10 @@ await build({
   entryPoints: ["./mod.ts"],
   outDir: "./dist",
   shims: {
-    deno: true,
+    deno: "dev",
   },
+  typeCheck: "both",
+  scriptModule: false,
   package: {
     name: "wordle-logic",
     version: "0.1.0",
