@@ -14,7 +14,7 @@ I plan on building a minimal adless version of
 [wordle](https://en.wikipedia.org/wiki/Wordle) and wanted to open source the
 logic.
 
-### Getting started
+## Getting started
 
 This module exports a single `wordle()` function which exports
 [nanostores](https://github.com/nanostores/nanostores) and an `attempt()`
@@ -25,7 +25,7 @@ function to test words.
 - `attempt()`: a function which takes in a single string and returns an object
   with a `error?: WordleError` property.
 
-### Errors
+## Errors
 
 The `attempt()` function will return an object with an `error?: WordleError`
 property if the attempt failed for any reason. Common errors are (for an
